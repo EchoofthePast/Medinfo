@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/upload.css">
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title">
+            <p> Please Edit Data </p>
+        </div>
+        
+        <div class="search">
+            <form method='get'>
+                <label for="search">Enter Name</label>
+                <input id="search" type="text" name="searchbox" value="{{.Both}}" />
+                <input type="submit"  value="Press Me">
+            </form>
+        </div>
+
+        <div class="home">
+            <form method='get'>
+                <div>
+                    <label for="input">Home</label>
+                </div>
+
+                <div>
+                    <button type="button" onclick="button3()" value="Edit File">Home</button>
+                </div>
+            </form>
+        </div>
+
+        
+        
+        <script>
+            function button3() {
+                window.location = 'home';
+            }         
+        </script>
+
+        <div class="profile">
+
+            <h1>{{.Both}} </h1>
+
+            <div class="image">
+                <a target="_blank"><img img.border="0" img src="{{.Image}}" height="300" width="250"></a>
+            </div>
+        </div>
+
+                <div class="copyright_notice">
+                    <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+                </div>
+
+
+        <div class= "patient">
+
+            
+            <form enctype="multipart/form-data" action="http://localhost:1337/upload" method="post">
+                <input type="file" name="uploadfile" />
+                <input type="hidden" name="token" value="{{.}}" />
+                <input type="submit" value="upload" />
+            </form>
+
+                            
+        </div>
+       
+
+
+
+        <script>
+            function clearbox(){
+                document.getElementsByName("firstname").value= "";
+            }
+        </script>
+</body>
+
+</html>
