@@ -1,0 +1,5 @@
+/static/images/dennisritchie.jpg
+/static/images/The Universe/The Universe.jpg
+Dennis
+Ritchie
+The Creator and now once again master of C programming language , He played a hand in the development of Go.I am the God of all Computers and I created the Programming language called C 

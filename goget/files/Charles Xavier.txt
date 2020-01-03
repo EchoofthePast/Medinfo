@@ -1,0 +1,5 @@
+/static/images/Charles Xavier.jpg
+/static/images/The Universe/The Universe.jpg
+Charles
+Xavier
+Leader of the Xmen and Psychic, Powerful in the Head.
